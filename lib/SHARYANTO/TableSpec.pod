@@ -32,6 +32,18 @@ table, to view a DB grid on the web browser, etc.
 
 =head2 Properties
 
+=head3 summary => STR
+
+From DefHash. Table summary.
+
+=head3 description => STR
+
+From DefHash. Table longer description.
+
+=head3 tags => ARRAY
+
+From DefHash.
+
 =head3 fields => HASH
 
 A hash, where the keys are field names and the values field specification. See
@@ -49,23 +61,23 @@ A DefHash.
 
 =head2 Properties
 
-=head2 schema => STR|ARRAY
+=head3 schema => STR|ARRAY
 
 L<Sah> schema. This property is required.
 
-=head2 summary => STR
+=head3 summary => STR
+
+From DefHash. Field summary.
+
+=head3 description => STR
+
+From DefHash. Field longer description.
+
+=head3 tags => ARRAY
 
 From DefHash.
 
-=head2 description => STR
-
-From DefHash.
-
-=head2 tags => ARRAY
-
-From DefHash.
-
-=head2 index => INT
+=head3 index => INT
 
 Specify the order of field. Must start from 0 and be contiguous.
 
