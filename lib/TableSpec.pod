@@ -1,6 +1,7 @@
-# PODNAME: SHARYANTO::TableSpec
+# PODNAME: TableSpec
 
 # VERSION
+# DATE
 
 1;
 # ABSTRACT: Table data specification

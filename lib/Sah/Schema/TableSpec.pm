@@ -114,7 +114,7 @@ $SCHEMAS{table_spec} = [
 
 =head1 DESCRIPTION
 
-This module contains L<Sah> schemas to validate L<SHARYANTO::TableSpec> specs.
+This module contains L<Sah> schemas to validate L<TableSpec> specs.
 
 
 =head1 SCHEMAS
@@ -132,4 +132,4 @@ This module contains L<Sah> schemas to validate L<SHARYANTO::TableSpec> specs.
 
 L<Sah>, L<Data::Sah>
 
-L<SHARYANTO::TableSpec>
+L<TableSpec>
