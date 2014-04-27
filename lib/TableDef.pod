@@ -1,10 +1,10 @@
-# PODNAME: TableSpec
+# PODNAME: TableDef
 
 # VERSION
 # DATE
 
 1;
-# ABSTRACT: Table data specification
+# ABSTRACT: Table data definition
 
 =head1 SPECIFICATION VERSION
 
@@ -13,7 +13,7 @@
 
 =head1 ABSTRACT
 
-This document describes TableSpec, a specification for table data.
+This document describes TableDef, a way to define table data.
 
 
 =head1 SPECIFICATION
@@ -25,11 +25,11 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL "NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
 interpreted as described in RFC 2119.
 
-A TableSpec spec is written in L<DefHash>. It can be used to describe the
+A TableDef spec is written in L<DefHash>. It can be used to describe the
 structure of a relational database table, a CSV file, or an array of hashes.
-Tools can be written to convert a TableSpec hash to SQL's CREATE TABLE
-statement, or to utilize information in the TableSpec hash to format an HTML
-table, to view a DB grid on the web browser, etc.
+Tools can be written to convert a TableDef hash to SQL's CREATE TABLE statement,
+or to utilize information in the TableDef hash to format an HTML table, to view
+a DB grid on the web browser, etc.
 
 =head2 Properties
 

@@ -1,4 +1,4 @@
-package Sah::Schema::TableSpec;
+package Sah::Schema::TableDef;
 
 use 5.010001;
 use strict;
@@ -8,8 +8,25 @@ use warnings;
 
 our %SCHEMAS;
 
-$SCHEMAS{field_spec} = [
-    'hash', # XXX should be 'defhash' later
+$SCHEMAS{field_def} = [hash => { # XXX should be 'defhash' later
+    # tmp
+    _prop => {
+        # from defhash
+        v => {},
+        defhash_v => {},
+        name => {},
+        summary => {},
+        description => {},
+        tags => {},
+        x => {},
+
+        schema => {},
+        pos => {},
+        req => {},
+        sortable => {},
+        filterable => {},
+    },
+
     keys => {
 
         # XXX from defhash
@@ -57,10 +74,24 @@ $SCHEMAS{field_spec} = [
     },
     # XXX from defhash
     'allowed_keys_re' => qr/\A\w+(\.\w+)*\z/,
-];
+}];
 
-$SCHEMAS{table_spec} = [
-    'hash', # XXX should be 'defhash' later
+$SCHEMAS{table_def} = [hash => { # XXX should be 'defhash' later
+    # tmp
+    _prop => {
+        # from defhash
+        v => {},
+        defhash_v => {},
+        name => {},
+        summary => {},
+        description => {},
+        tags => {},
+        x => {},
+
+        fields => {},
+        pk => {},
+    },
+
     keys => {
 
         # XXX from defhash
@@ -85,7 +116,7 @@ $SCHEMAS{table_spec} = [
 
         fields => [
             'array*',
-            of => $SCHEMAS{field_spec}, # XXX should be 'field_spec*' (refer by name)
+            of => $SCHEMAS{field_def}, # XXX should be 'field_def*' (refer by name)
         ],
 
         pk => [
@@ -102,10 +133,10 @@ $SCHEMAS{table_spec} = [
     'allowed_keys_re' => qr/\A\w+(\.\w+)*\z/,
 ];
 
-# XXX how to allow _ANYTHING and blah.blah._ANYTHING, but allow known TableSpec properties only?
+# XXX how to allow _ANYTHING and blah.blah._ANYTHING, but allow known TableDef properties only?
 
 1;
-# ABSTRACT: Sah schemas to validate TableSpec
+# ABSTRACT: Sah schemas to validate TableDef
 
 =head1 SYNOPSIS
 
@@ -114,16 +145,16 @@ $SCHEMAS{table_spec} = [
 
 =head1 DESCRIPTION
 
-This module contains L<Sah> schemas to validate L<TableSpec> specs.
+This module contains L<Sah> schemas to validate L<TableDef> specs.
 
 
 =head1 SCHEMAS
 
 =over
 
-=item * table_spec
+=item * table_def
 
-=item * field_spec
+=item * field_def
 
 =back
 
@@ -132,4 +163,4 @@ This module contains L<Sah> schemas to validate L<TableSpec> specs.
 
 L<Sah>, L<Data::Sah>
 
-L<TableSpec>
+L<TableDef>

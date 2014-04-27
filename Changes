@@ -1,10 +1,10 @@
-Revision history for TableSpec
+Revision history for TableDef
 
 1.0.3   2014-04-27 (SHARYANTO)
 
         - No spec changes.
 
-        - Rename dist {SHARYANTO-,}TableSpec.
+        - Rename dist SHARYANTO-TableSpec -> TableDef.
 
 
 1.0.2   2014-04-27 (SHARYANTO)
