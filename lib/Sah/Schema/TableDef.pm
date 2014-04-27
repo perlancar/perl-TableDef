@@ -131,7 +131,7 @@ $SCHEMAS{table_def} = [hash => { # XXX should be 'defhash' later
 
     # XXX from defhash
     'allowed_keys_re' => qr/\A\w+(\.\w+)*\z/,
-];
+}];
 
 # XXX how to allow _ANYTHING and blah.blah._ANYTHING, but allow known TableDef properties only?
 
