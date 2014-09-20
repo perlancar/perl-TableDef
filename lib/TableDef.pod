@@ -82,7 +82,7 @@ From DefHash.
 
 Specify the order of field. Must start from 0 and be contiguous.
 
-=head2 req => BOOL (default: 0)
+=head3 req => BOOL (default: 0)
 
 Whether this field is mandatory to be present. If 0, then function can choose to
 omit the field.
