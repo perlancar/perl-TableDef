@@ -148,19 +148,6 @@ $SCHEMAS{table_def} = [hash => { # XXX should be 'defhash' later
 This module contains L<Sah> schemas to validate L<TableDef> specs.
 
 
-=head1 SCHEMAS
-
-=over
-
-=item * table_def
-
-=item * field_def
-
-=back
-
-
-=head1 SEE ALSO
-
-L<Sah>, L<Data::Sah>
+=head1 append:SEE ALSO
 
 L<TableDef>
