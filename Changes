@@ -1,5 +1,12 @@
 Revision history for TableDef
 
+1.0.7   2016-03-08 (PERLANCAR)
+
+	- No spec changes.
+
+	- [dist] Use Pod::Weaver::Plugin::Sah::Schema.
+
+
 1.0.6   2015-09-06 (PERLANCAR)
 
 	- No spec changes.
