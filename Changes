@@ -1,3 +1,11 @@
+1.0.8   2017-03-10 (PERLANCAR)
+
+	- No spec changes.
+
+	- Rename schema module Sah::Schema::TableDef ->
+	  Sah::Schema::tabledef::*.
+
+
 1.0.7   2016-03-08 (PERLANCAR)
 
 	- No spec changes.
