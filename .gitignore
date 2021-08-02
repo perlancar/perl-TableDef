@@ -2,3 +2,4 @@ TableDef-*
 .build
 *~
 nytprof*
+.DS_Store
