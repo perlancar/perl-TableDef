@@ -1,7 +1,10 @@
+## no critic: TestingAndDebugging::RequireUseStrict
 # PODNAME: TableDef
 
-# VERSION
+# AUTHORITY
 # DATE
+# DIST
+# VERSION
 
 1;
 # ABSTRACT: Table data definition
@@ -58,7 +61,7 @@ name, or an array of field names (for multi-field key).
 
 =head1 FIELD SPECIFICATION
 
-A DefHash.
+A L<DefHash>.
 
 =head2 Properties
 
@@ -108,5 +111,10 @@ module L<Perinci::Sub::Gen::AccessTable>, if you give C<< detail => 1 >> to the
 generated function, it will include all fields except fields that has this
 property set to 0. To include such fields, you'll need to explicitly issue C<<
 with.FIELDNAME => 1 >>.
+
+
+=head1 SEE ALSO
+
+L<DefHash>
 
 =cut
