@@ -1,6 +1,8 @@
-1.0.9   2023-05-15  Released-By: PERLANCAR; Urgency: low
+1.0.9   2023-05-15  Released-By: PERLANCAR; Urgency: medium
 
         - No spec changes.
+
+        - [bugfix] Fix tabledef::table_def schema.
 
         - Mention/link to DefHash.
 
