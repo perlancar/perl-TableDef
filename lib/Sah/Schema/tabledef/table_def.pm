@@ -45,7 +45,7 @@ our $schema = [hash => { # XXX should be 'defhash' later
 
         fields => [
             'array*',
-            of => ['field_def', {req=>1}, {}],
+            of => ['tabledef::field_def', {req=>1}, {}],
         ],
 
         pk => [
